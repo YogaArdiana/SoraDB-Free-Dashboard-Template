@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/SoraUI-asset/logo/3.png">
     <meta name="description" content="SoraUI - Free Bootstrap 5 Admin Template, Free Dashboard Template For All">
     <title>SoraUI - Free Bootstrap 5 Admin Template</title>
     <!-- css -->
@@ -23,28 +24,209 @@
         <!-- external styling end -->
     <!-- css end -->
 </head>
-<body class="d-flex w-100 vh-100">
+<body class="d-flex w-100 vh-100 position-relative">
     <!-- sidebar -->
-    <aside class="sidebar h-100 w-20 border">
-        
+    <aside class="sidebar h-100 w-30 border-end d-flex flex-column ps-4 pe-4 tr-3s overflow-hidden">
+        <!-- brands -->
+        <div class="d-flex align-items-center gap-1 mt-4 mb-3">
+            <div class="s-brands">
+                <img src="asset/SoraUI-asset/logo/3.png" alt="">
+            </div>
+            <div class="s-brands" style="width:170px; height:
+            100px ; transform: translateX(-30px);">
+                <img src="asset/SoraUI-asset/logo/5.png" alt="" style="object-fit: cover;">
+            </div>
+            <!-- <div class="">
+                <h4 class="mb-0 p-0 fw-bold text-default">Sora</h4>
+            </div> -->
+            <button class="btn bg-transparent border-0 outline-none menu-mobile position-relative ms-auto menu" id="menu">
+                <img src="asset/SoraUI-asset/icon/menu.png" alt="">
+            </button>
+        </div>
+        <!-- brands end -->
+        <!-- nav -->
+        <nav class="nav-sidebar">
+            <ul class="navbar-nav gap-2 scroll pe-2 overflow-x-hidden">
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center active">
+                        <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/dashboard.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Dashboard</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/package.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Orders</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/customer-behavior.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Cusromers</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/box.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Products</h6>
+                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate"></i>
+                    </button>
+                    <!-- 2 direction = driection & direction-2 -->
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="ps-3 link-colapse-ctr overflow-hidden">
+                            <ul>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Data</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Stocks</a>
+                                </li>
+                                <li class="d-flex mt-3">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Suplier International</a>
+                                </li>
+                                <li class="d-flex mt-3 active-colapse">
+                                    <div class="direction direction-2 "></div>
+                                    <a href="" class="ms-4">Products Suplier Local</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/settings.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Settings</h6>
+                    </a>
+                </li>
+                <li class="p-3">
+                    <h5 class="text-default">Menu</h5>
+                </li>
+                <li class="">
+                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#Components" aria-expanded="true" aria-controls="collapseOne">
+                        <!-- <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/box.png" alt="">
+                        </div> -->
+                        <i class="bi bi-layers"></i>
+                        <h6 class="p-0 m-0 fw-semibold">Components</h6>
+                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate"></i>
+                    </button>
+                    <!-- 2 direction = driection & direction-2 -->
+                    <div id="Components" class="accordion-collapse collapse" data-bs-parent="#Components">
+                        <div class="ps-3 link-colapse-ctr overflow-hidden">
+                            <ul>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Accordion</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Alert</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Badge</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Breadcrumb</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Button</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Card</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Carousel</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Colapse</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Dropdown</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">List Group</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Modal</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Navs</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Pagination</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Placeholder</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Progress</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Spinner</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Toasts</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="" class="ms-4">Tooltip</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- nav end -->
+        <div class="mt-auto d-flex justify-content-center mb-3">
+            <a href="" class="text-decoration-none text-black fs-6 fw-semibold d-flex align-items-center gap-2"><i class="bi bi-box-arrow-left fs-4"></i>Logout</a>
+        </div>
     </aside>
     <!-- sidebar end -->
 
-    <!-- main content -->
-    <main class="main-content w-100 border">
+    <!-- section content -->
+    <section class=" w-100">
         <!-- header -->
-        <header class="header p-2 d-flex align-items-center gap-3 pe-5">
-            <button class="btn bg-transparent border-0 outline-none icon-toogle position-relative">
+        <header class="header p-2 d-flex align-items-center gap-0  gap-lg-3 pe-2 pe-lg-5 border-bottom ">
+            <button class="btn bg-transparent border-0 outline-none icon-toogle position-relative menu" id="menu">
                 <img src="asset/SoraUI-asset/icon/menu.png" alt="">
             </button>
             <!-- greeting -->
-            <div class="greeting">
+            <div class="greeting d-none d-md-block">
                 <h4 class="p-0 m-0 fw-semibold">Hi, Jhon Doe</h3>
                 <span>May your day be as bright as the <span class="text-default">blue sky</span></span>
             </div>
             <!-- greeting end -->
             <!-- right menu -->
-            <div class="ms-auto d-flex align-items-center gap-3">
+            <div class="ms-auto d-flex align-items-center gap-0 gap-lg-3">
                 <div class="dropdown">
                     <button class="btn bg-transparent border-0 outline-none icon-toogle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="asset/SoraUI-asset/icon/notification.png" alt="">
@@ -67,20 +249,20 @@
                     </ul>
                 </div>
                 <!-- profile -->
-                <div class="d-flex align-items-center gap-1">
-                    <!-- profile img -->
-                    <div class="profile-image rounded-pill">
-                        <img src="asset/SoraUI-asset/profile-icon/avatar-1.webp" alt="">
-                    </div>
-                    <!-- profile img end -->
+                <div class="d-flex align-items-center gap-0">
                     <!-- dropdown -->
                     <div class="dropdown">
-                        <button class="btn d-flex align-items-center dropdown-toggle bg-transparent border-0 outline-none text-dark gap-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="d-flex flex-column align-items-start">
+                        <button class="btn d-flex align-items-center dropdown-toggle bg-transparent border-0 outline-none text-dark gap-2 gap-md-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- profile img -->
+                            <div class="profile-image rounded-pill">
+                                <img src="asset/SoraUI-asset/profile-icon/avatar-1.webp" alt="">
+                            </div>
+                            <!-- profile img end -->
+                            <div class="profile-detail d-flex flex-column align-items-start">
                                 <h6 class="p-0 m-0 fw-semibold">Jhon Doe</h5>
                                 <span class="text-black-50">Admin</span>
                             </div>
-                            <i class="js-rotate bi bi-chevron-down tr-3s"></i>
+                            <i class="js-rotate bi bi-chevron-down tr-3s drop-icon"></i>
                         </button>
                         <ul class="dropdown-menu mt-3">
                           <li><a class="dropdown-item" href="#"><i class="bi bi-person me-1"></i>Profile</a></li>
@@ -96,9 +278,218 @@
         </header>
         <!-- header end -->
         <!-- content section -->
+        <main class="main-content">
+            <section class="container pt-3">
+                <h3 class="fw-semibold">Dashboard</h3>
+                <!-- breadchrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-default">Dashboard</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                    </ol>
+                  </nav>
+                <!-- breadchrumb end -->
+                <!-- 3 card chart -->
+                <section class="gap-2 d-grid wraper-responsive ">
+                    <!-- card chart 1 -->
+                    <div class="card-dashboard p-3 bg-white rounded">
+                        <div class="d-flex gap-2">
+                            <div class="icon-ctr bg-semi-yellow rounded d-flex align-items-center justify-content-center">
+                                <div class="image-icon bg-1">
+                                    <img src="asset/SoraUI-asset/icon/cashback 2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="detail d-flex flex-column">
+                                <div class="d-flex gap-2">
+                                    <h2 class="fw-bold">$20,000</h2>
+                                    <div class="percentage d-flex align-items-center gap-2">
+                                        <div class="arrow-icon">
+                                            <img src="asset/SoraUI-asset/icon/6797554 2.png" alt="">
+                                        </div>
+                                        <span class="up">20%</span>
+                                    </div>
+                                </div>
+                                <span class="mt-auto fw-semibold text-black-50">Earned This Month</span>
+                            </div>
+                        </div>
+                        <div class="chartJs">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                    <!-- card chart 1 end -->
+                    <!-- card chart 2 -->
+                    <div class="card-dashboard p-3 bg-white rounded">
+                        <div class="d-flex gap-2">
+                            <div class="icon-ctr bg-semi-purple rounded d-flex align-items-center justify-content-center">
+                                <div class="image-icon bg-1">
+                                    <img src="asset/SoraUI-asset/icon/247304 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="detail d-flex flex-column">
+                                <div class="d-flex gap-2">
+                                    <h2 class="fw-bold">9000</h2>
+                                    <div class="percentage d-flex align-items-center gap-2">
+                                        <div class="arrow-icon">
+                                            <img src="asset/SoraUI-asset/icon/6797554 2 drop.png" alt="">
+                                        </div>
+                                        <span class="drop">10%</span>
+                                    </div>
+                                </div>
+                                <span class="mt-auto fw-semibold text-black-50">Monthly Visitor</span>
+                            </div>
+                        </div>
+                        <div class="chartJs">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                    <!-- card chart 2 end -->
+                    <!-- card chart 3  -->
+                    <div class="border card-dashboard p-3 bg-white rounded">
+                        <div class="d-flex gap-2">
+                            <div class="icon-ctr bg-semi-green rounded d-flex align-items-center justify-content-center">
+                                <div class="image-icon bg-1">
+                                    <img src="asset/SoraUI-asset/icon/package 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="detail d-flex flex-column">
+                                <div class="d-flex gap-2">
+                                    <h2 class="fw-bold">2000</h2>
+                                    <div class="percentage d-flex align-items-center gap-2">
+                                        <div class="arrow-icon">
+                                            <img src="asset/SoraUI-asset/icon/6797554 2.png" alt="">
+                                        </div>
+                                        <span class="up">21%</span>
+                                    </div>
+                                </div>
+                                <span class="mt-auto fw-semibold text-black-50">Orders This Month</span>
+                            </div>
+                        </div>
+                        <div class="chartJs">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+                    <!-- card chart 3 end -->
+                </section>
+                <!-- 3 card chart end-->
+                <!-- 2 section -->
+                <section class="d-flex gap-3 mt-4 flex-lg-nowrap flex-wrap">
+                    <!-- charts -->
+                    <div class="w-100 w-lg-70 ">
+                        <div class="d-flex align-items-center">
+                            <h4>Charts</h4>
+                            <a href="" class="text-decoration-none text-default ms-auto">View All -></a>
+                        </div>
+                        <div class="w-100 rounded bg-white p-3">
+                            <canvas id="myChart4" class="chart-lg"></canvas>
+                        </div>
+                    </div>
+                    <!-- charts -->
+                    <!-- todolist -->
+                    <div class="w-100 w-lg-30 border p-3 rounded bg-default" style="height:400px ;">
+                        <h5 class="text-light mb-2 fw-normal">Mini Todolist - 21 June 24</h5>
+                        <div class="w-100 rounded bg-white p-2" style="height:87% ;">
+                            <!-- input -->
+                            <form action="" class="d-flex gap-1">
+                                <input type="text" class="form-control" placeholder="Add Todolist">
+                                <button class="btn btn-sm bg-default text-light">Add</button>
+                            </form>
+                            <!-- input end -->
+                            <div class="d-flex flex-column gap-1 overflow-auto mt-2" style="min-height:80% ; max-height: 80%;">
+                                <!-- card -->
+                                <div class="w-100 p-2 border-bottom rounded d-flex align-items-center">
+                                    <span class="d-block fw-semibold">Input Prodcucts</span>
+                                    <button class="btn btn-sm ms-auto"><i class="bi bi-check-lg text-success"></i></button>
+                                    <button class="btn btn-sm"><i class="bi bi-trash-fill text-danger"></i></button>
+                                </div>
+                                <!-- card end -->
+                                <!-- card -->
+                                <div class="w-100 p-2 border-bottom rounded d-flex align-items-center">
+                                    <span class="d-block fw-semibold">Record sales</span>
+                                    <button class="btn btn-sm ms-auto"><i class="bi bi-check-lg text-success"></i></button>
+                                    <button class="btn btn-sm"><i class="bi bi-trash-fill text-danger"></i></button>
+                                </div>
+                                <!-- card end -->
+                                <!-- card -->
+                                <div class="w-100 p-2 border-bottom rounded d-flex align-items-center">
+                                    <span class="d-block fw-semibold">Create Products</span>
+                                    <span class="ms-auto">Done</span>
+                                    <button class="btn btn-sm"><i class="bi bi-trash-fill text-danger"></i></button>
+                                </div>
+                                <!-- card end -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- todolist end -->
+                </section>
+                <!-- 2 section end -->
+                <!-- 1 section -->
+                <section class="mt-4">
+                    <!-- table -->
+                    <div class="w-100">
+                        <div class="d-flex align-items-center">
+                            <h4>Orders</h4>
+                            <a href="" class="text-decoration-none text-default ms-auto">View All -></a>
+                        </div>
+                        <div class="w-100 rounded bg-white p-3 overflow-auto">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Order Num</th>
+                                    <th scope="col">Customer</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Paid</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td scope="row">091221</td>
+                                    <td>Katlyne</td>
+                                    <td class="text-default">201$</td>
+                                    <td><i class="bi bi-check-lg text-success"></i></td>
+                                    <td>Open</td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm"><i class="bi bi-check-lg text-light"></i></button>
+                                        <button class="btn btn-danger btn-sm"><i class="bi bi-trash text-light"></i></button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td scope="row">091222</td>
+                                    <td>Vodka</td>
+                                    <td class="text-default">171$</td>
+                                    <td><i class="bi bi-check-lg text-success"></i></td>
+                                    <td>Closed</td>
+                                    <td>
+                                        <!-- <button class="btn btn-success btn-sm"><i class="bi bi-check-lg text-light"></i></button> -->
+                                        <button class="btn btn-danger btn-sm"><i class="bi bi-trash text-light"></i></button>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                    <!-- table end -->
+                </section>
+                <!-- 1 section end -->
+
+
+                <!-- footer -->
+                <footer class="mt-3 d-flex justify-content-between">
+                    <span class="text-black-50 fw-semibold">
+                        2024 &copy;SoraUI
+                    </span>
+                    <span class="fw-semibold text-dark">
+                        Carafted With 💖 By <a class="text-decoration-none text-default" href="https://github.com/Yogaardiana">Yogaardiana</a>
+                    </span>
+                </footer>
+                <!-- footer end -->
+            </section>
+        </main>
         <!-- content section end -->
-    </main>
-    <!-- main content end -->
+    </section>
+    <!-- section content end -->
     
 
 
@@ -106,6 +497,20 @@
         <!-- bootstrap 5 js cdn -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- bootstrap 5 js cdn end -->
+        <!-- chart js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="asset/js/chartJsConfig.js"></script>
+        <script>
+            let data1 = [1000, 15000, 500, 8000, 6000, 20000]
+            let dataVisitors = [10000, 15000, 20000, 5000, 8000, 9000]
+            let dataOrders = [100, 300, 500, 900, 1400, 2000]
+            // (borderColor, backgroundColor, id, label, icon, dataCharts, display, lineTension)
+            chart('#313131', '#313131', 'myChart', "Salary", " $", data1, false, false)
+            chart('#313131', '#313131', 'myChart2', "Visitors", " People", dataVisitors, false, false)
+            chart('#313131', '#313131', 'myChart3', "Orders", " Order", dataOrders, false, false)
+            chart('#7367FF', '#fff', 'myChart4', "Salary", " $", data1, true, true)
+        </script>
+        <!-- chart js end -->
         <!-- external js -->
         <script src="asset/js/script.js"></script>
         <!-- external js end -->
