@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../asset/SoraUI-asset/logo/3.png">
+    <meta name="description" content="SoraUI - Free Bootstrap 5 Admin Template, Free Dashboard Template For All">
+    <title>Alerts - SoraUI</title>
+    <!-- css -->
+        <!-- Google Fonts Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <!-- Google Fonts Inter end -->
+        <!-- bootstrap 5.3 css cdn -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <!-- bootstrap 5.3 css cdn end -->
+        <!-- bootstrap icon cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- bootstrap icon cdn end -->
+        <!-- external styling -->
+        <link rel="stylesheet" href="../../asset/css/style.css">
+        <!-- external styling end -->
+    <!-- css end -->
+</head>
+<body class="d-flex w-100 vh-100 position-relative">
+    <!-- sidebar -->
+    <aside class="sidebar h-100 w-30 border-end d-flex flex-column ps-4 pe-4 tr-3s overflow-hidden">
+        <!-- brands -->
+        <div class="d-flex align-items-center gap-1 mt-4 mb-3">
+            <div class="s-brands">
+                <img src="../../asset/SoraUI-asset/logo/3.png" alt="">
+            </div>
+            <div class="s-brands" style="width:170px; height:
+            100px ; transform: translateX(-30px);">
+                <img src="../../asset/SoraUI-asset/logo/5.png" alt="" style="object-fit: cover;">
+            </div>
+            <!-- <div class="">
+                <h4 class="mb-0 p-0 fw-bold text-default">Sora</h4>
+            </div> -->
+            <button class="btn bg-transparent border-0 outline-none menu-mobile position-relative ms-auto menu" id="menu">
+                <img src="../../asset/SoraUI-asset/icon/menu.png" alt="">
+            </button>
+        </div>
+        <!-- brands end -->
+        <!-- nav -->
+        <nav class="nav-sidebar">
+            <ul class="navbar-nav gap-2 scroll pe-2 overflow-x-hidden">
+                <li class="">
+                    <a href="../../index.html" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="../../asset/SoraUI-asset/icon/dashboard.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Dashboard</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="../../asset/SoraUI-asset/icon/package.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Orders</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="../../asset/SoraUI-asset/icon/customer-behavior.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Customers</h6>
+                    </a>
+                </li>
+                <li class="">
+                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#productsColapse" aria-expanded="true" aria-controls="productsColapse">
+                        <div class="icon">
+                            <img src="../../asset/SoraUI-asset/icon/box.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Products</h6>
+                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate"></i>
+                    </button>
+                    <!-- 2 direction = driection & direction-2 -->
+                    <div id="productsColapse" class="accordion-collapse collapse" data-bs-parent="#productsColapse">
+                        <div class="ps-3 link-colapse-ctr overflow-hidden">
+                            <ul>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Data</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Stocks</a>
+                                </li>
+                                <li class="d-flex mt-3">
+                                    <div class="direction"></div>
+                                    <a href="" class="ms-4">Products Suplier International</a>
+                                </li>
+                                <li class="d-flex mt-3 active-colapse">
+                                    <div class="direction direction-2 "></div>
+                                    <a href="" class="ms-4">Products Suplier Local</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
+                        <div class="icon">
+                            <img src="../../asset/SoraUI-asset/icon/settings.png" alt="">
+                        </div>
+                        <h6 class="p-0 m-0 fw-semibold">Settings</h6>
+                    </a>
+                </li>
+                <li class="p-3">
+                    <h5 class="text-default">Menu</h5>
+                </li>
+                <li class="">
+                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#Components" aria-expanded="true" aria-controls="collapseOne">
+                        <!-- <div class="icon">
+                            <img src="asset/SoraUI-asset/icon/box.png" alt="">
+                        </div> -->
+                        <i class="bi bi-layers"></i>
+                        <h6 class="p-0 m-0 fw-semibold text-default">Components</h6>
+                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate rotate-180" ></i>
+                    </button>
+                    <!-- 2 direction = driection & direction-2 -->
+                    <div id="Components" class="accordion-collapse collapse show" data-bs-parent="#Components">
+                        <div class="ps-3 link-colapse-ctr overflow-hidden">
+                            <ul>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-accordion.html" class="ms-4">Accordion</a>
+                                </li>
+                                <li class="d-flex mt-3 active-colapse">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-alerts.html" class="ms-4">Alert</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-badge.html" class="ms-4">Badge</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-breadcrumb.html" class="ms-4">Breadcrumb</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-button.html" class="ms-4">Button</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-card.html" class="ms-4">Card</a>
+                                </li>
+                                <!-- <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-carousel.html" class="ms-4">Carousel</a>
+                                </li> -->
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-colapse.html" class="ms-4">Colapse</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-dropdown.html" class="ms-4">Dropdown</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-list-group.html" class="ms-4">List Group</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-modal.html" class="ms-4">Modal</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-navs.html" class="ms-4">Navs</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-pagination.html" class="ms-4">Pagination</a>
+                                </li>
+                                <!-- <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-placeholder.html" class="ms-4">Placeholder</a>
+                                </li> -->
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-progress.html" class="ms-4">Progress</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-spiner.html" class="ms-4">Spinner</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-toast.html" class="ms-4">Toasts</a>
+                                </li>
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-tooltip.html" class="ms-4">Tooltip</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- nav end -->
+        <div class="mt-auto d-flex justify-content-center mb-3">
+            <a href="" class="text-decoration-none text-black fs-6 fw-semibold d-flex align-items-center gap-2"><i class="bi bi-box-arrow-left fs-4"></i>Logout</a>
+        </div>
+    </aside>
+    <!-- sidebar end -->
+
+    <!-- section content -->
+    <section class=" w-100">
+        <!-- header -->
+        <header class="header p-2 d-flex align-items-center gap-0  gap-lg-3 pe-2 pe-lg-5 border-bottom ">
+            <button class="btn bg-transparent border-0 outline-none icon-toogle position-relative menu" id="menu">
+                <img src="../../asset/SoraUI-asset/icon/menu.png" alt="">
+            </button>
+            <!-- greeting -->
+            <div class="greeting d-none d-md-block">
+                <h4 class="p-0 m-0 fw-semibold">Hi, Jhon Doe</h3>
+                <span>May your day be as bright as the <span class="text-default">blue sky</span></span>
+            </div>
+            <!-- greeting end -->
+            <!-- right menu -->
+            <div class="ms-auto d-flex align-items-center gap-0 gap-lg-3">
+                <div class="dropdown">
+                    <button class="btn bg-transparent border-0 outline-none icon-toogle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../asset/SoraUI-asset/icon/notification.png" alt="">
+                        <div class="dot position-absolute top-0 right-0">
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu mt-3">
+                        <div class="ps-3">
+                            <h6 class="text-default fw-semibold">24 Notification</h6>
+                        </div>
+                        <hr class="p-0 m-0">
+                        <li><a class="dropdown-item d-flex align-items-center gap-2 p-2 pe-3 ps-3" href="#">
+                        <i class="bi bi-chat-left-text-fill p-0 m-0"></i>
+                        4 New Message - <span class="text-black-50 p-0 m-0">1 mins</span>
+                        </a></li>
+                        <li><a class="dropdown-item d-flex align-items-center gap-2 p-2 pe-3 ps-3" href="#">
+                        <i class="bi bi-box-seam-fill p-0 m-0"></i>
+                        20 New Orders - <span class="text-black-50 p-0 m-0">5 mins</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <!-- profile -->
+                <div class="d-flex align-items-center gap-0">
+                    <!-- dropdown -->
+                    <div class="dropdown">
+                        <button class="btn d-flex align-items-center dropdown-toggle bg-transparent border-0 outline-none text-dark gap-2 gap-md-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- profile img -->
+                            <div class="profile-image rounded-pill">
+                                <img src="../../asset/SoraUI-asset/profile-icon/avatar-2.avif" alt="">
+                            </div>
+                            <!-- profile img end -->
+                            <div class="profile-detail d-flex flex-column align-items-start">
+                                <h6 class="p-0 m-0 fw-semibold">Jhon Doe</h5>
+                                <span class="text-black-50">Admin</span>
+                            </div>
+                            <i class="js-rotate bi bi-chevron-down tr-3s drop-icon"></i>
+                        </button>
+                        <ul class="dropdown-menu mt-3">
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-person me-1"></i>Profile</a></li>
+                          <li><a class="dropdown-item" href="#"><i class="bi bi-pen me-1"></i>Edit Profile</a></li>
+                          <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-trash me-1"></i>Delete Account</a></li>
+                        </ul>
+                    </div>
+                    <!-- dropdown end -->
+                </div>
+                <!-- profile end -->
+            </div>
+            <!-- right menu end -->
+        </header>
+        <!-- header end -->
+        <!-- content section -->
+        <main class="main-content">
+            <section class="container pt-3 d-flex flex-column" style="min-height:100%;">
+                <h3 class="fw-semibold">Alerts</h3>
+                <p><span class="text-danger">Note :</span> This is a modification of the <a href="https://getbootstrap.com/docs/5.3" class="text-default">Bootstrap 5</a> Component . visit <a href="https://getbootstrap.com/docs/5.3" class="text-default">Bootstrap 5</a> for more complete documentation 💗</p>
+                <!-- breadchrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="../../index.html" class="text-decoration-none text-default">Dashboard</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Component</li>
+                      <li class="breadcrumb-item active" aria-current="page">Alerts</li>
+                    </ol>
+                </nav>
+                <!-- breadchrumb end -->
+                  <!-- main -->
+                    <div class="d-flex gap-2 flex-lg-nowrap flex-wrap">
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">Default</h4>
+                                <p class="mt-2 text-black-50">Alerts Default</p>
+                            </div>
+                            <div class="alert alert-primary" role="alert">
+                            A simple primary alert—check it out!
+                            </div>
+                            <div class="alert alert-secondary" role="alert">
+                            A simple secondary alert—check it out!
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                            A simple success alert—check it out!
+                            </div>
+                            <div class="alert alert-danger" role="alert">
+                            A simple danger alert—check it out!
+                            </div>
+                            <div class="alert alert-warning" role="alert">
+                            A simple warning alert—check it out!
+                            </div>
+                            <div class="alert alert-info" role="alert">
+                            A simple info alert—check it out!
+                            </div>
+                            <div class="alert alert-light" role="alert">
+                            A simple light alert—check it out!
+                            </div>
+                            <div class="alert alert-dark" role="alert">
+                            A simple dark alert—check it out!
+                            </div>
+                            
+                        </div>
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">With Heading</h4>
+                                <p class="mt-2 text-black-50">Alert With Heading</p>
+                            </div>
+                            <div class="alert border border-danger alert-dismissible fade show p-4" role="alert">
+                                <div class="d-flex align-items-center gap-2 text-danger fw-semibold fs-5">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    Delete Files ?
+                                </div>
+                                <div>
+                                    <p>You are about to permanently delete this folder and all of its contents. This action cannot be undone. Are you sure you want to proceed?</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="btn btn-light ms-auto btn-sm border" data-bs-dismiss="alert" aria-label="Close">No, Keep Folder</button>
+                                    <button class="btn btn-danger btn-sm">Yes, Delete Folder</button>
+                                </div>
+                            </div>
+                            <div class="alert border border-dark alert-dismissible fade show p-4" role="alert">
+                                <div class="d-flex align-items-center gap-2 text-dark fw-semibold fs-5">
+                                    <i class="bi bi-exclamation-triangle"></i>
+                                    Notice:
+                                </div>
+                                <div>
+                                    <p><strong>Our website will undergo scheduled maintenance from 12:00 AM to 4:00 AM (GMT) on June 30, 2024.</strong> During this period, the website will be temporarily unavailable. We apologize for any inconvenience this may cause and appreciate your understanding and patience. Please ensure you complete any urgent tasks before this maintenance window. Thank you!</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sec 2 -->
+                    <div class="d-flex gap-2 flex-lg-nowrap flex-wrap mt-2">
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">With Icon</h4>
+                                <p class="mt-2 text-black-50">Alert With Icon</p>
+                            </div>
+                                <div class="alert alert-primary" role="alert">
+                                <i class="bi bi-stars"></i>
+                                A simple primary alert—check it out!
+                                </div>
+                                <div class="alert alert-success" role="alert">
+                                <i class="bi bi-check-lg"></i>
+                                A simple success alert—check it out!
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                <i class="bi bi-x-lg"></i>
+                                A simple danger alert—check it out!
+                                </div>
+                                <div class="alert alert-warning" role="alert">
+                                <i class="bi bi-exclamation-triangle-fill"></i>
+                                A simple warning alert—check it out!
+                                </div>
+                                <div class="alert alert-info" role="alert">
+                                <i class="bi bi-info-square-fill"></i>
+                                A simple info alert—check it out!
+                                </div>         
+                        </div>
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">Dismisable</h4>
+                                <p class="mt-2 text-black-50">Alert Dismisable</p>
+                            </div>
+                                <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                A simple primary alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                A simple secondary alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                A simple success alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                A simple danger alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                A simple warning alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                A simple info alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-light alert-dismissible fade show" role="alert">
+                                A simple light alert—check it out!
+                                <button class="btn-close shadow-none" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-dark alert-dismissible fade show d-flex p-3" role="alert">
+                                A simple dark alert—check it out!
+                                <button class="btn bg-transparent p-0 m-0 ms-auto shadow-none text-light fs-5" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                                </div>
+        
+                        </div>
+                    </div>
+                  <!-- main end -->
+                <!-- footer -->
+                <footer class="mt-3 mt-auto d-flex justify-content-between pt-5 pb-5">
+                    <span class="text-black-50 fw-semibold">
+                        2024 &copy;SoraUI. Built with <a href="https://getbootstrap.com/" class="text-decoration-none text-default">Bootstrap 5.</a>
+                    </span>
+                    <span class="fw-semibold text-dark">
+                        Carafted With 💖 By <a class="text-decoration-none text-default" href="https://github.com/Yogaardiana">Yogaardiana</a>
+                    </span>
+                </footer>
+                <!-- footer end -->
+            </section>
+        </main>
+        <!-- content section end -->
+    </section>
+    <!-- section content end -->
+    
+
+
+    <!-- js -->
+        <!-- bootstrap 5 js cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- bootstrap 5 js cdn end -->
+        <!-- chart js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="../../asset/js/chartJsConfig.js"></script>
+        <script>
+            // let data1 = [1000, 15000, 500, 8000, 6000, 20000]
+            // // (borderColor, backgroundColor, id, label, icon, dataCharts, display, lineTension)
+            // chart('#313131', '#313131', 'myChart', "Salary", " $", data1, false, false)
+        </script>
+        <!-- chart js end -->
+        <!-- external js -->
+        <script src="../../asset/js/script.js"></script>
+        <!-- external js end -->
+    <!-- js end -->
+</body>
+</html>

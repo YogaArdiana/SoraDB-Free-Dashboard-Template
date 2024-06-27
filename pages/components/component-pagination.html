@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="asset/SoraUI-asset/logo/3.png">
+    <link rel="icon" href="../../asset/SoraUI-asset/logo/3.png">
     <meta name="description" content="SoraUI - Free Bootstrap 5 Admin Template, Free Dashboard Template For All">
-    <title>SoraUI - Free Bootstrap 5 Admin Template</title>
+    <title>Pagination - SoraUI</title>
     <!-- css -->
         <!-- Google Fonts Inter -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!-- bootstrap icon cdn end -->
         <!-- external styling -->
-        <link rel="stylesheet" href="asset/css/style.css">
+        <link rel="stylesheet" href="../../asset/css/style.css">
         <!-- external styling end -->
     <!-- css end -->
 </head>
@@ -30,17 +30,17 @@
         <!-- brands -->
         <div class="d-flex align-items-center gap-1 mt-4 mb-3">
             <div class="s-brands">
-                <img src="asset/SoraUI-asset/logo/3.png" alt="">
+                <img src="../../asset/SoraUI-asset/logo/3.png" alt="">
             </div>
             <div class="s-brands" style="width:170px; height:
             100px ; transform: translateX(-30px);">
-                <img src="asset/SoraUI-asset/logo/5.png" alt="" style="object-fit: cover;">
+                <img src="../../asset/SoraUI-asset/logo/5.png" alt="" style="object-fit: cover;">
             </div>
             <!-- <div class="">
                 <h4 class="mb-0 p-0 fw-bold text-default">Sora</h4>
             </div> -->
             <button class="btn bg-transparent border-0 outline-none menu-mobile position-relative ms-auto menu" id="menu">
-                <img src="asset/SoraUI-asset/icon/menu.png" alt="">
+                <img src="../../asset/SoraUI-asset/icon/menu.png" alt="">
             </button>
         </div>
         <!-- brands end -->
@@ -48,9 +48,9 @@
         <nav class="nav-sidebar">
             <ul class="navbar-nav gap-2 scroll pe-2 overflow-x-hidden">
                 <li class="">
-                    <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center active">
+                    <a href="../../index.html" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
                         <div class="icon">
-                            <img src="asset/SoraUI-asset/icon/dashboard.png" alt="">
+                            <img src="../../asset/SoraUI-asset/icon/dashboard.png" alt="">
                         </div>
                         <h6 class="p-0 m-0 fw-semibold">Dashboard</h6>
                     </a>
@@ -58,7 +58,7 @@
                 <li class="">
                     <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
                         <div class="icon">
-                            <img src="asset/SoraUI-asset/icon/package.png" alt="">
+                            <img src="../../asset/SoraUI-asset/icon/package.png" alt="">
                         </div>
                         <h6 class="p-0 m-0 fw-semibold">Orders</h6>
                     </a>
@@ -66,21 +66,21 @@
                 <li class="">
                     <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
                         <div class="icon">
-                            <img src="asset/SoraUI-asset/icon/customer-behavior.png" alt="">
+                            <img src="../../asset/SoraUI-asset/icon/customer-behavior.png" alt="">
                         </div>
-                        <h6 class="p-0 m-0 fw-semibold">Cusromers</h6>
+                        <h6 class="p-0 m-0 fw-semibold">Customers</h6>
                     </a>
                 </li>
                 <li class="">
-                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button href="" class="w-100 nav-link d-flex gap-3 p-3 rounded align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#productsColapse" aria-expanded="true" aria-controls="productsColapse">
                         <div class="icon">
-                            <img src="asset/SoraUI-asset/icon/box.png" alt="">
+                            <img src="../../asset/SoraUI-asset/icon/box.png" alt="">
                         </div>
                         <h6 class="p-0 m-0 fw-semibold">Products</h6>
                         <i class="bi bi-chevron-down ms-auto tr-3s js-rotate"></i>
                     </button>
                     <!-- 2 direction = driection & direction-2 -->
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="productsColapse" class="accordion-collapse collapse" data-bs-parent="#productsColapse">
                         <div class="ps-3 link-colapse-ctr overflow-hidden">
                             <ul>
                                 <li class="d-flex mt-3 ">
@@ -106,7 +106,7 @@
                 <li class="">
                     <a href="" class="nav-link d-flex gap-3 p-3 rounded align-items-center">
                         <div class="icon">
-                            <img src="asset/SoraUI-asset/icon/settings.png" alt="">
+                            <img src="../../asset/SoraUI-asset/icon/settings.png" alt="">
                         </div>
                         <h6 class="p-0 m-0 fw-semibold">Settings</h6>
                     </a>
@@ -120,84 +120,84 @@
                             <img src="asset/SoraUI-asset/icon/box.png" alt="">
                         </div> -->
                         <i class="bi bi-layers"></i>
-                        <h6 class="p-0 m-0 fw-semibold">Components</h6>
-                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate"></i>
+                        <h6 class="p-0 m-0 fw-semibold text-default">Components</h6>
+                        <i class="bi bi-chevron-down ms-auto tr-3s js-rotate rotate-180" ></i>
                     </button>
                     <!-- 2 direction = driection & direction-2 -->
-                    <div id="Components" class="accordion-collapse collapse" data-bs-parent="#Components">
+                    <div id="Components" class="accordion-collapse collapse show" data-bs-parent="#Components">
                         <div class="ps-3 link-colapse-ctr overflow-hidden">
                             <ul>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Accordion</a>
+                                    <a href="../../pages/components/component-accordion.html" class="ms-4">Accordion</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Alert</a>
+                                    <a href="../../pages/components/component-alerts.html" class="ms-4">Alert</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Badge</a>
+                                    <a href="../../pages/components/component-badge.html" class="ms-4">Badge</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Breadcrumb</a>
+                                    <a href="../../pages/components/component-breadcrumb.html" class="ms-4">Breadcrumb</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Button</a>
+                                    <a href="../../pages/components/component-button.html" class="ms-4">Button</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Card</a>
+                                    <a href="../../pages/components/component-card.html" class="ms-4">Card</a>
+                                </li>
+                                <!-- <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-carousel.html" class="ms-4">Carousel</a>
+                                </li> -->
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-colapse.html" class="ms-4">Colapse</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Carousel</a>
+                                    <a href="../../pages/components/component-dropdown.html" class="ms-4">Dropdown</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Colapse</a>
+                                    <a href="../../pages/components/component-list-group.html" class="ms-4">List Group</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Dropdown</a>
+                                    <a href="../../pages/components/component-modal.html" class="ms-4">Modal</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">List Group</a>
+                                    <a href="../../pages/components/component-navs.html" class="ms-4">Navs</a>
+                                </li>
+                                <li class="d-flex mt-3 active-colapse">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-pagination.html" class="ms-4">Pagination</a>
+                                </li>
+                                <!-- <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-placeholder.html" class="ms-4">Placeholder</a>
+                                </li> -->
+                                <li class="d-flex mt-3 ">
+                                    <div class="direction direction-2"></div>
+                                    <a href="../../pages/components/component-progress.html" class="ms-4">Progress</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Modal</a>
+                                    <a href="../../pages/components/component-spiner.html" class="ms-4">Spinner</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Navs</a>
+                                    <a href="../../pages/components/component-toast.html" class="ms-4">Toasts</a>
                                 </li>
                                 <li class="d-flex mt-3 ">
                                     <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Pagination</a>
-                                </li>
-                                <li class="d-flex mt-3 ">
-                                    <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Placeholder</a>
-                                </li>
-                                <li class="d-flex mt-3 ">
-                                    <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Progress</a>
-                                </li>
-                                <li class="d-flex mt-3 ">
-                                    <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Spinner</a>
-                                </li>
-                                <li class="d-flex mt-3 ">
-                                    <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Toasts</a>
-                                </li>
-                                <li class="d-flex mt-3 ">
-                                    <div class="direction direction-2"></div>
-                                    <a href="" class="ms-4">Tooltip</a>
+                                    <a href="../../pages/components/component-tooltip.html" class="ms-4">Tooltip</a>
                                 </li>
                             </ul>
                         </div>
@@ -217,7 +217,7 @@
         <!-- header -->
         <header class="header p-2 d-flex align-items-center gap-0  gap-lg-3 pe-2 pe-lg-5 border-bottom ">
             <button class="btn bg-transparent border-0 outline-none icon-toogle position-relative menu" id="menu">
-                <img src="asset/SoraUI-asset/icon/menu.png" alt="">
+                <img src="../../asset/SoraUI-asset/icon/menu.png" alt="">
             </button>
             <!-- greeting -->
             <div class="greeting d-none d-md-block">
@@ -229,7 +229,7 @@
             <div class="ms-auto d-flex align-items-center gap-0 gap-lg-3">
                 <div class="dropdown">
                     <button class="btn bg-transparent border-0 outline-none icon-toogle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="asset/SoraUI-asset/icon/notification.png" alt="">
+                        <img src="../../asset/SoraUI-asset/icon/notification.png" alt="">
                         <div class="dot position-absolute top-0 right-0">
                         </div>
                     </button>
@@ -255,7 +255,7 @@
                         <button class="btn d-flex align-items-center dropdown-toggle bg-transparent border-0 outline-none text-dark gap-2 gap-md-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <!-- profile img -->
                             <div class="profile-image rounded-pill">
-                                <img src="asset/SoraUI-asset/profile-icon/avatar-1.webp" alt="">
+                                <img src="../../asset/SoraUI-asset/profile-icon/avatar-2.avif" alt="">
                             </div>
                             <!-- profile img end -->
                             <div class="profile-detail d-flex flex-column align-items-start">
@@ -279,23 +279,111 @@
         <!-- header end -->
         <!-- content section -->
         <main class="main-content">
-            <section class="container pt-3">
-                <h3 class="fw-semibold">Structure</h3>
+            <section class="container pt-3 d-flex flex-column" style="min-height:100%;">
+                <h3 class="fw-semibold">Pagination</h3>
+                <p><span class="text-danger">Note :</span> This is a modification of the <a href="https://getbootstrap.com/docs/5.3" class="text-default">Bootstrap 5</a> Component . visit <a href="https://getbootstrap.com/docs/5.3" class="text-default">Bootstrap 5</a> for more complete documentation 💗</p>
                 <!-- breadchrumb -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-default">Dashboard</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Structure</li>
+                      <li class="breadcrumb-item"><a href="../../index.html" class="text-decoration-none text-default">Dashboard</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Component</li>
+                      <li class="breadcrumb-item active" aria-current="page">Pagination</li>
                     </ol>
                   </nav>
                 <!-- breadchrumb end -->
-               
+                  <!-- main -->
+                    <div class="d-flex gap-2 flex-lg-nowrap flex-wrap">
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">Basic</h4>
+                                <p class="mt-2 text-black-50">Basic</p>
+                            </div>
+                            <div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination">
+                                      <li class="page-item pagi-prev"><a class="page-link" href="#">Prev</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item pagi-next"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                            
+                        </div>
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">Disabled link</h4>
+                                <p class="mt-2 text-black-50">Disabled link</p>
+                            </div>
+                            <div>
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                      <li class="page-item disabled">
+                                        <a class="page-link">Previous</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">2</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 flex-lg-nowrap flex-wrap mt-2">
+                        <div class="w-100 bg-white rounded p-3">
+                            <div class="card-header">
+                                <h5 class="fw-semibold text-default">Sizing</h4>
+                                <p class="mt-2 text-black-50">Sizing</p>
+                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <!-- lg -->
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-lg">
+                                      <li class="page-item pagi-prev"><a class="page-link" href="#">Prev</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item pagi-next"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </nav>
 
+                                  <!-- md -->
+                                  <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-md">
+                                      <li class="page-item pagi-prev"><a class="page-link" href="#">Prev</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item pagi-next"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </nav>
 
+                                  <!-- sm -->
+                                  <nav aria-label="Page navigation">
+                                    <ul class="pagination pagination-sm">
+                                      <li class="page-item pagi-prev"><a class="page-link" href="#">Prev</a></li>
+                                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item pagi-next"><a class="page-link" href="#">Next</a></li>
+                                    </ul>
+                                  </nav>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                  <!-- main end -->
                 <!-- footer -->
-                <footer class="mt-3 d-flex justify-content-between">
+                <footer class="mt-3 mt-auto d-flex justify-content-between pt-5 pb-5">
                     <span class="text-black-50 fw-semibold">
-                        2024 &copy;SoraUI
+                        2024 &copy;SoraUI. Built with <a href="https://getbootstrap.com/" class="text-decoration-none text-default">Bootstrap 5.</a>
                     </span>
                     <span class="fw-semibold text-dark">
                         Carafted With 💖 By <a class="text-decoration-none text-default" href="https://github.com/Yogaardiana">Yogaardiana</a>
@@ -316,20 +404,15 @@
         <!-- bootstrap 5 js cdn end -->
         <!-- chart js -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="asset/js/chartJsConfig.js"></script>
+        <script src="../../asset/js/chartJsConfig.js"></script>
         <script>
             // let data1 = [1000, 15000, 500, 8000, 6000, 20000]
-            // let dataVisitors = [10000, 15000, 20000, 5000, 8000, 9000]
-            // let dataOrders = [100, 300, 500, 900, 1400, 2000]
             // // (borderColor, backgroundColor, id, label, icon, dataCharts, display, lineTension)
             // chart('#313131', '#313131', 'myChart', "Salary", " $", data1, false, false)
-            // chart('#313131', '#313131', 'myChart2', "Visitors", " People", dataVisitors, false, false)
-            // chart('#313131', '#313131', 'myChart3', "Orders", " Order", dataOrders, false, false)
-            // chart('#7367FF', '#fff', 'myChart4', "Salary", " $", data1, true, true)
         </script>
         <!-- chart js end -->
         <!-- external js -->
-        <script src="asset/js/script.js"></script>
+        <script src="../../asset/js/script.js"></script>
         <!-- external js end -->
     <!-- js end -->
 </body>
